@@ -203,7 +203,7 @@ def generate_user_pattern(user_proc_folder , one_hot_dict):
 if __name__ == '__main__':
 
 
-      limit = 87111
+      limit = 1891714
       i = 0
 
       user_time = defaultdict(list)
@@ -301,7 +301,7 @@ if __name__ == '__main__':
       dim = 0
 
       # For each day train the patterns
-      for day in sorted_days:
+      for day in sorted_days[0 : 3]:
 
             file_nm = day + '.txt'
 
