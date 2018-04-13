@@ -336,3 +336,4 @@ if __name__ == '__main__':
 
             # Print the key - pattern and value - weight_matrix
             print(pat , pat_hop_net[tuple(pat)])
+            
