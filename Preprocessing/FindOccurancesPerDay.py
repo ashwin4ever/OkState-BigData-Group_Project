@@ -16,9 +16,10 @@ a = set();
 b=set();
 valueList =[];
 countList =[];
-
+#return the matches between two lists a reusable function
 def returnMatches(a, b):
     return [[x for x in a if x in b], [x for x in b if x in a]]
+#break down words and filter unnecessary words
 def Wordify(a):
     global line
     for line in  list(a) :
@@ -30,12 +31,14 @@ def Wordify(a):
                         aset.add ( NormalizeWord( s ) )
     str_list = list ( filter ( None, list ( aset ) ))
     return str_list
+#regex to clean the folder output label
 def NormalizeWord(f):
     return re.sub ( r"[^a-zA-Z-_(0-9) ]+", '', f ).strip()
 
 #main logic
 if __name__ == '__main__':
     myDict={}
+    #reading file
     mydetails = DetailsBuilder().readfile(ResFolder+'nasa_access_logs.csv')
     i=0;
     for line in mydetails:
@@ -45,6 +48,7 @@ if __name__ == '__main__':
                 myDict[currLine[1].split ( ':' )[0]]['Date']+="~"+currLine[1].split(':')[0]
                 myDict[currLine[1].split ( ':' )[0]]['Folder'] += "~"+currLine[2]
             else:
+                #adding full folder structure nad matched folder with date base
                 myDict[currLine[1].split(':')[0]] = {'Date':currLine[1].split(':')[0], 'Folder': currLine[2]}
 
         else:
@@ -79,5 +83,6 @@ for key1,value1 in UserDetails.items():
     print ( "***************************************************************" )
     print("the date "+key1+" has  following combination in given checklist")
     print()
+    #printing to console
     for n  in countForThiskey.keys():
         print ("the word '"+ n +"' has '"+ countForThiskey[n].__str__() +"'  Occurances")
