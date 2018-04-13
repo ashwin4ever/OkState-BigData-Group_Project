@@ -17,15 +17,15 @@ b = [];
 dict = {};
 mytuple = ();
 
-
+#DataHandler includes the parser
 class DetailsBuilder ( object ):
-
+     #function to readfile
     def readfile(self,filename):
         with open ( filename, 'rb' ) as inputfile:
             content = inputfile.readlines ()
             content = [x.strip () for x in content]
         return content
-
+        #Parser to clean th File that is passed through
     def MyParser(self, filename):
         # search for ip type
         # pattern = re.compile("^\d{1,3}\.d{1,3}\.d{1,3}\.d{1,3}$")
@@ -69,18 +69,18 @@ class DetailsBuilder ( object ):
 
                 else:
                     dict[user] = {'User':user, 'TimeStamp':Tstamp, 'Folder':Folder}
-
+#returning the user,timestamp and folder in a dictionary to caller
             return dict
 
-
+#main test logic driver
 if __name__ == '__main__':
     for f in onlyfiles:
 
         details = DetailsBuilder ().MyParser ( ResFolder + f )
         i = 0
-
+        #writting the processed data to 'output.csv'
         ftowrite = open (ResFolder + 'output.csv', 'ab' )
-
+#creating a header or first row for CSV 
         np.savetxt ( ftowrite,np.column_stack(["Users","TimeStamps","Folders"]), fmt="%s" , delimiter=',' )
         for key, value in sorted ( details.items () ):
 
