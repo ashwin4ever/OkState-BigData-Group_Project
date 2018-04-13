@@ -1,0 +1,853 @@
+	<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Aim is to get a single page html with a responsive layout">
+		<title>BigData-Group Project</title>
+
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+			<!--[if lte IE 8]>
+				<link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+			<![endif]-->
+			<!--[if gt IE 8]><!-->
+				<!--link rel="stylesheet" href="css/layouts/side-menu.css">
+				<!--link rel="stylesheet" href="css/layouts/side-menu.css">
+			<!--<![endif]-->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+	 <script type="text/javascript">
+		( function (window, document) {
+
+		var layout   = document.getElementById('layout'),
+			menu     = document.getElementById('menu'),
+			menuLink = document.getElementById('menuLink'),
+			content  = document.getElementById('main');
+
+		function toggleClass(element, className) {
+			var classes = element.className.split(/\s+/),
+				length = classes.length,
+				i = 0;
+
+			for(; i < length; i++) {
+			  if (classes[i] === className) {
+				classes.splice(i, 1);
+				break;
+			  }
+			}
+			// The className is not found
+			if (length === classes.length) {
+				classes.push(className);
+			}
+
+			element.className = classes.join(' ');
+		}
+
+		function toggleAll(e) {
+			var active = 'active';
+
+			e.preventDefault();
+			toggleClass(layout, active);
+			toggleClass(menu, active);
+			toggleClass(menuLink, active);
+		}
+
+	  /*  menuLink.onclick = function (e) {
+			toggleAll(e);
+		};*/
+
+	//    content.onclick = function(e) {
+	//        if (menu.className.indexOf('active') !== -1) {
+	//            toggleAll(e);
+	//        }
+	//    };
+
+	}(this, this.document));
+
+		 function CloseAllDivs(){
+			$("#"+$(this).attr('rel')).show().siblings("div").hide();
+		 }
+
+	window.onload = function(){ var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+	//    if (panel.style.maxHeight){
+	//      panel.style.maxHeight = null;
+	//    } else {
+		  panel.style.maxHeight = 50 + "px";
+		//  panel.show()
+
+	//    } 
+	  });
+	}};
+
+	window.onload =	($('#menu div').mouseover(function() {
+	   var $this = $(this);
+	   var id = $this.attr('id');
+	   var $currentWidget = $('#' + id);
+	   $currentWidget.show().siblings('.widget-container').hide();
+	}));
+	window.onload = ($('#menu div').mouseleave(function() {
+		$('.widget-container').hide();
+	}));
+
+	</script>
+	<style>
+
+
+
+		/* Style the buttons that are used to open and close the accordion panel */
+	.accordion {
+		padding-top: 10px;
+		background-color: #eee;
+		color: black;
+		cursor: pointer;
+		padding: auto;
+		width: auto;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+	}
+
+	.active, .accordion:hover {
+		background-color: #ccc;
+	}
+
+		.accordion:after {
+		color: #777;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+
+	.active:after {
+		content: "\2212";
+	}
+
+	.panel {
+		padding: 0 18px;
+		background-color: white;
+		max-height: 50;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+
+	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+	.active, .accordion:hover {
+		background-color: #ccc;
+	}
+
+	/* Style the accordion panel. Note: hidden by default */
+	.panel {
+		margin: 0 auto;
+		padding: 0 2em;
+		background-color: white;
+		display: none;
+		overflow: hidden;
+	}
+
+	.pure-img-responsive {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/*
+	Add transition to containers so they can push in and out.
+	*/
+	#layout,
+	#menu,
+	.menu-link {
+		-webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-ms-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+	}
+
+	/*
+	This is the parent `<div>` that contains the menu and the content area.
+	*/
+	#layout {
+		position: relative;
+		left: 0;
+		padding-left: 0;
+	}
+		#layout.active #menu {
+			left: 150px;
+			width: 250px;
+		}
+
+		#layout.active .menu-link {
+			left: 190px;
+		}
+	/*
+	The content `<div>` is where all your content goes.
+	*/
+	.content {
+		margin: 0 inherit;
+		padding: 0 2em;
+		max-width: 60em;
+		margin-bottom: 2px;
+		line-height: 1.75em;
+		padding-bottom: 1.45em;
+		font-size: 1.35em;
+		font-family: "crafty-girls";
+		padding-left: 2px;
+	}
+
+	.header {
+		 margin: 0;
+		 color: #333;
+		  padding-top: 30em ;
+		 text-align: center;
+		 padding: 2.5em 2em 0;
+		}
+		.header h1 {
+			margin: 0.2em 0;
+			font-size: 4.5em;
+			font-weight: 300;
+			color: bisque;
+			font-style: oblique;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			font-variant-alternates: normal;
+			text-shadow: 2em;
+			text-rendering: optimizeLegibility;
+		}
+		 .header h2 {
+		font-weight: 300;
+		color: darkgoldenrod;
+		padding: 2px;
+		margin-top: 0;
+		}
+
+		.header pl {
+		font-weight: 50;
+		color: darkturquoise;
+		padding: 2px;
+		margin-top: 0;
+			font-kerning: auto;
+			font-size-adjust: auto;
+			font-style:oblique;
+		}
+		.header p1 {
+		font-weight: 50;
+		color: aliceblue;
+		padding: 8px;
+		margin-top: 0;
+			font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			font-kerning: auto;
+			font-style: italic;
+			font-size: 24px;
+		}
+			.header p {
+		font-weight: 50;
+		color: azure;
+		padding: 2px;
+		margin-top: 0;
+			font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			font-kerning: auto;
+			font-style: italic;
+		}
+		.header ph {
+		font-weight: 50;
+		color: goldenrod;
+			padding: 2px;
+		margin-top: 0;
+			font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-style: oblique;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		}
+
+	.content-subhead {
+		margin: 50px 0 20px 0;
+		font-weight: 300;
+		color: black;
+	}
+    .content strong{
+	font-weight: 5em;
+	color: #11b8e0;
+	font-style:italic;
+	}
+		.content li {  
+		font-weight: 30;
+		color: aliceblue;
+	}
+
+
+	/*
+	The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+	appears on the left side of the page.
+	*/
+
+	#menu {
+		margin-left: -150px; /* "#menu" width */
+		width: 150px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 1000; /* so the menu or its navicon stays above all content */
+		background: #303030;
+		overflow-y: auto;
+		-webkit-transform: translate3d(0,0,0);
+	}
+		/*
+		All anchors inside the menu should be styled like this.
+		*/
+		#menu a {
+			color: #B7B7B7;
+			border: none;
+			padding: 0.6em 0 0.6em 0.6em;
+			font-size: x-large;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+				"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			font-variant: small-caps;
+		}
+
+		/*
+		Remove all background/borders, since we are applying them to #menu.
+		*/
+		 #menu .pure-menu,
+		 #menu .pure-menu ul {
+			border: none;
+			background: transparent;
+		}
+
+		/*
+		Add that light border to separate items into groups.
+		*/
+		#menu .pure-menu ul,
+		#menu .pure-menu .menu-item-divided {
+			border-top: 2px solid ;
+		}
+			/*
+			Change color of the anchor links on hover/focus.
+			*/
+			#menu .pure-menu li a:hover,
+			#menu .pure-menu li a:focus {
+				background: #1f8dd6;
+			}
+
+		/*
+		This styles the selected menu item `<li>`.
+		*/
+		#menu .pure-menu-selected,
+		#menu .pure-menu-heading {
+			background: #1f8dd6;
+		}
+			/*
+			This styles a link within a selected menu item `<li>`.
+			*/
+			#menu .pure-menu-selected a {
+				color: #fff;
+			}
+
+		/*
+		This styles the menu heading.
+		*/
+		#menu .pure-menu-heading {
+			font-size: 110%;
+			color: #fff;
+			margin: 0;
+		}
+
+	/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+	/*
+	The button to open/close the Menu is custom-made and not part of Pure. Here's
+	how it works:
+	*/
+
+	/*
+	`.menu-link` represents the responsive menu toggle that shows/hides on
+	small screens.
+	*/
+	.menu-link {
+		position: fixed;
+		display: block; /* show this only on small screens */
+		top: -1;
+		left: 0; /* "#menu width" */
+		background: #000;
+		background: rgba(0,0,0,0.7);
+		font-size: 25px; /* change this value to increase/decrease button size */
+		z-index: 15;
+		width: 2em;
+		height: auto;
+		padding: 2.1em 1.6em;
+	}
+
+		.menu-link:hover,
+		.menu-link:focus {
+			background: rgba(0,0,0,0.7);
+		}
+
+		.menu-link span {
+			position: relative;
+			display: block;
+		}
+
+		.menu-link span,
+		.menu-link span:before,
+		.menu-link span:after {
+			background-color: #fff;
+			width: 100%;
+			height: 0.2em;
+		}
+
+			.menu-link span:before,
+			.menu-link span:after {
+				position: absolute;
+				margin-top: -0.6em;
+				content: " ";
+			}
+
+			.menu-link span:after {
+				margin-top: 0.6em;
+			}
+
+		body{
+		-webkit-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		-o-background-size: 100% 100%;
+		background-size: 100% 100%;
+			background-image: linear-gradient(rgba(10, 10, 0, 0.5), rgba(0, 0, 0, 1)),url("http://powerlighttech.com/wp-content/uploads/2017/11/dark-powerlight-header.jpg");
+		}
+	/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+	/*
+	Hides the menu at `48em`, but modify this based on your app's needs.
+	*/
+	@media (min-width: 48em) {
+
+		.header,
+		.content {
+			padding-top:1em;
+			padding-left: 2em;
+			padding-right: 2em;
+			background-color: dimgray  ;
+			border-radius: 12px;
+		}
+
+		#layout {
+			padding-left: 150px; /* left col width "#menu" */
+			left: 0;
+		}
+		#menu {
+			left: 150px;
+		}
+
+		.menu-link {
+			position: fixed;
+			left: 150px;
+			display: none;
+		}
+
+		#layout.active .menu-link {
+			left: 150px;
+		}
+	}
+
+	@media (max-width: 48em) {
+		/* Only apply this when the window is small. Otherwise, the following
+		case results in extra padding on the left:
+			* Make the window small.
+			* Tap the menu to trigger the active state.
+			* Make the window large again.
+		*/
+		#layout.active {
+			position: relative;
+			left: 150px;
+		}
+	}
+		.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted double;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+		position: absolute;
+		z-index: 1;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -60px;
+
+		/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+	</style>
+	</head>
+	<body>
+	<div id="layout">
+		<!-- Menu toggle -->
+		<a href="#menu" id="menuLink" class="menu-link">
+			<!-- Hamburger icon -->
+			<span></span>
+		</a>
+
+		<div id="menu">
+			<div class="pure-menu">
+	<!--            <a class="pure-menu-heading" href="#">CS-5433 Group Project</a>-->
+
+				<ul class="pure-menu-list">
+
+					<li class="pure-menu-item menu-item-divided pure-menu-selected"><a href="#home" class="pure-menu-link" onClick="CloseAllDivs()">home</a></li>
+					<li class="pure-menu-item menu-item-divided"><a href="#intro" class="pure-menu-link" onClick="CloseAllDivs()">Intro</a></li>
+					<li class="pure-menu-item"><a href="#phase1" class="pure-menu-link" onClick="CloseAllDivs()">Phase-I</a></li>
+					<li class="pure-menu-item"><a href="#phase2" class="pure-menu-link" onClick="CloseAllDivs()">Phase-II</a></li>
+				   <li class="pure-menu-item"><a href="#Future" class="pure-menu-link" onClick="CloseAllDivs()">Upcoming</a> </li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="main">
+		   <div id ="home"></div>
+			<div class="header">
+			  <h1>Pattern Recognition using Hopfield Networks</h1>
+			  <h3><p1> CS 5433 Group Project  </p1></h3>
+			  <h4><pl> Group 4 </pl></h4>
+				<h4><ph> Team Members</ph></h4>
+			  <h4><p1> Ashwin Kannan </p1></h4>
+			  <h4><p1> Nagaraju Vadranam </p1></h4>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			</div>
+		</div>
+		   <br>
+		   <div  class="content-container">
+		   <div id ="intro">
+			<div class="content-subhead" >
+				<div >
+				   <h1> <a style="text-decoration:inherit"> Intro:</a></h1>
+				   <div class="content">
+					<li>Pattern matching is the act of checking a given sequence of tokens for the presence of the constituents of some pattern.</li> <li>In contrast to pattern recognition, the match usually has to be exact. The patterns generally have the form of either sequences or tree structures.</li>
+					<li> Uses of pattern matching include outputting the locations (if any) of a pattern within a token sequence, to output some component of the matched pattern, and to substitute the matching pattern with some other token sequence (i.e., search and replace).</li>
+
+					<li>Sequence patterns (e.g., a text string) are often described using regular expressions and matched using techniques such as backtracking.</li>
+				   </div>
+				   <h3> <a style="text-decoration:inherit"> Hopfield Networks:</a></h3>
+				   <div class="content">
+					<li>A Hopfield network is a form of recurrent artificial neural network popularized by John Hopfield in 1982, but described earlier by Little in 1974.</li>
+					<li> Hopfield networks also provide a model for understanding human memory.</li>
+					<li>We are using an Association and Recall model (ARM) to understand the pattern. This type of
+					functionality is commonly seen in Hopfield Nets. It is an Artificial Neural Network (ANN) which works
+					similar to human brain in terms of auto associative memory capabilities.</li> <li>Data is converted into binary
+					vectors and fed into Hopfield Nets which then learns the patterns by creating Weighted Matrices.
+					These matrices represent the memory of the network and can be queried to recover patterns.
+					Similarity measures like cosine similarity score is used to evaluate the similarity of the returned pattern
+					to the pattern stored in the memory of the network.</li>
+				   </div>
+					<h3>
+						<a class="link" data-rel="collapseThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" style="text-decoration:overline">Problem Description:</a>
+
+					</h3>
+
+				</div>
+
+				<div id="collapseThree" class="panel-collapse collapse">
+					<div class="panel-body">
+					   <ul class="content">
+						 <li >The problem we have decided to tackle for this Group Project falls under the category of Pattern
+							 Recognition.</li>
+							 <li> It involves detecting patterns in data by which inferences are made related either to its
+								 usage level or about its metadata or attributes.</li>
+								 <li> In this project, the problem we are working on relates
+									to identify how users access folders and what patterns can be derived from it leading to inferences.</li>
+					  <li > As we are dealing with the problem of finding patterns, we decided to find similarity or frequency
+							 patterns in accessing logs or folders.</li> <li>To that effect , the dataset was chosen to reflect the problem we
+							are trying to solve. </li>   
+					   </ul>
+
+					</div>
+				</div>
+			</div>
+	<!--
+			 <div class="content-subhead" >
+				<div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" style="text-decoration:overline">Problem Statement:</a>
+					</h3>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+					<div class="panel-body">
+						<ul class="content">
+						 <li > As we are dealing with the problem of finding patterns, we decided to find similarity or frequency
+							 patterns in accessing logs or folders.</li> <li>To that effect , the dataset was chosen to reflect the problem we
+							are trying to solve. </li>                    	                    	 
+					   </ul>
+					</div>
+				</div>
+			</div>
+	-->
+
+			<div class="content-subhead" >
+			 <div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#GIT" style="text-decoration:overline">GitUrl</a>
+					</h3>
+				</div>
+				 <div id="GIT" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div class="content">
+						<strong>Links: </strong>
+						 <li > <a href ="https://github.com/ashwin4ever/OkState-BigData-Group_Project" target="_blank"><font color="#11A800">Goto Project page</font></a></li>  
+					</div>
+				</div>
+		</div>
+			   </div>
+		   <br>
+		   <br>
+		   <br>
+		   <br>
+		  <div id ="phase1">
+			<div class="content-subhead" >
+				<h1> <a style="text-decoration:inherit"> Phase I:</a></h1>
+				   <div class="content-subhead" >
+					   <div class="content">
+					<li>For Phase 1 ,We are Primarily focused on cleaning the Dataset and Preprocess the Data .</li> 
+					<li>The total uncompressed data is about 205 MB (uncompressed) and the dataset
+						has around 1,800,000 logs regarding access requests to NASA.</li>		
+				   </div>
+			 <div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#DataSet" style="text-decoration:overline">DataSet</a>
+					</h3>
+				</div>
+				 <div id="DataSet" class="panel-collapse collapse">
+					<div class="panel-body">
+
+						<div class="content">
+						<strong>Data: </strong>
+						<li > We are currently looking into NASA access logs recorded between July 01
+							1995 and July 31 1995. </li>
+						 <strong><h4>Attributes in Data:</h4></strong>
+						<li>Users (IP address/host name)</li>
+						<li> Timestamp (dd/MM/YYYY: hh:mm:ss)</li>
+						<li>Type of http request –(Ex. GET/PUT)</li>
+						<li>Folder (Resource Accessed – Ex. /history/apollo/)</li>
+						<li>Protocol Type – (Ex. HTTP) </li>
+						<li>Protocol version –(Ex.1.0/2.1) </li>
+						<li> Response code (Ex. 200/404/500/503)</li>
+						<strong>Link: </strong>
+						 <li > <a href ="http://ita.ee.lbl.gov/html/contrib/NASA-HTTP.html" target="_blank"><font color="#11A800">Goto DataSet</font></a></li>  
+						 <strong>Preprocessed part Data Link: </strong>
+						 <li > <a href ="https://raw.githubusercontent.com/rajvadranam/OkState-BigData-Group_Project/Sandbox/nasa_access_logs.csv" target="_blank"><font color="#11A800">Goto Sample Processed DataSet</font></a></li>  
+					</div>
+				</div>
+		</div>
+			   </div>
+
+				<div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#phase1collapseThree" style="text-decoration:overline">Information About Processed Data:</a>
+					</h3>
+				</div>
+				<div id="phase1collapseThree" class="panel-collapse collapse">
+					<div class="panel-body">
+					   <ul class= "content">
+						 <li > The Processed Dataset contains processed data which contains Host name(IP/host name) , Time Stamp,Resource Accessed</li> 
+						 <li>Each User can access multiple resources on a given day</li>
+						 <li >This data is used to build a model that can train the ANN for the most frequently accessed folder by user(s) on given period of time </li>
+					   </ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div id ="phase2">
+			<div class="content-subhead" >
+				<h1> <a style="text-decoration:none"> Phase II :</a></h1>
+				   <div class="content">
+					<li>For Phase 2 ,The Primary focus is to design a hopfield network based on the processed data.</li> 
+					<li>Explore Possibilities on different learning rules related to hopfield Architecture </li>		
+					<li>Implementing a mapper job </li>		
+				   </div>
+			   <div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#phase2collapseone" style="text-decoration:overline">Libraries considered:</a>
+					</h3>
+				</div>
+				<div id="phase2collapseone" class="panel-collapse collapse">
+					<div class="panel-body">
+					   <ul class= "content">
+						 <strong>Libraries:</strong> 
+						 <li>Neupy</li>
+
+						 <li > <a href ="http://neupy.com/pages/installation.html" target="_blank"><font color="#11A800">Goto Neupy Installation page </font></a></li>  
+						 <li>Numpy</li>
+
+						 <li > <a href ="https://scipy.org/install.html" target="_blank"><font color="#11A800">Goto Numpy Installation page</font></a></li>  
+						 <li>Pandas</li>
+
+						 <li > <a href ="https://pandas.pydata.org/pandas-docs/stable/install.html" target="_blank"><font color="#11A800">Goto Pandas Installation page</font></a></li>  
+						 <li>SciKit Learn</li>
+
+						 <li > <a href ="http://scikit-learn.org/stable/install.html" target="_blank"><font color="#11A800">Goto SciKit Learn Installation page</font></a></li>  
+						 <li>Matplotlib</li>
+						 <li > <a href ="https://matplotlib.org/faq/installing_faq.html" target="_blank"><font color="#11A800">Goto Matplotlib Webpage</font></a></li>  
+					   </ul>
+
+					</div>
+				</div>
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#phase2collapseThree" style="text-decoration:overline">Proposed Mapper Architecture:</a>
+					</h3>
+
+				<div id="phase2collapseThree" class="panel-collapse collapse">
+					<div class="panel-body">
+					   <ul class="content">
+						<img class="center" src="https://raw.githubusercontent.com/rajvadranam/OkState-BigData-Group_Project/Sandbox/mapper_arch.png" alt="#">
+					     <br>
+						<strong>Insight into mapper Architecture:</strong>
+						<li>Raw logs is cleaned/processed to omit unnecessary/absent fields to reduce overhead</li>                 
+						<li>Represent the unique folders accessed by user as binary form,Since the Resources accessed is a multi level hierarchy, for simplicity sake consider up to two level and represent these multiple resources as a binary representations to form combined binary pattern </li>
+						<li>Processed data is then denoted in a vector space using pandas library</li>
+						<li>Each key will have a corresponding binary representation of the resources accessed per day/per user</li>
+						<li>Train the Algorithm using the matrix constructed with binary patters(generated for every user)</li>
+						<li>The class properties get-Weight(user defined in core library of neupy algorithm) will return the weigh matrix for the current key </li>
+						<li>The weight matrix then summed with on-coming key's matrix(x) such that this process is repeated for every key in the processed dataset </li>
+
+					   </ul>
+
+					</div>
+				</div>
+			</div>
+			 <div class="content-subhead" >
+				<div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#phase2collapseTwo" style="text-decoration:overline">Code Implementation:</a>
+					</h3>
+				</div>
+				<div id="phase2collapseTwo" class="panel-collapse collapse">
+					<div class="panel-body">
+						<ul class="content">
+						<strong>Preprocessing::</strong>
+						<li>Preprocessing logic From RawData logs</li>
+						 <li > <a href ="https://raw.githubusercontent.com/rajvadranam/OkState-BigData-Group_Project/Sandbox/DataHandler-Preprocessor.py" target="_blank"><font color="#11A800">Goto Preprocessing logic file </font></a></li>  
+							<li>Logic To find occurrences of Resources accessed based on date</li>
+						 <li > <a href ="https://raw.githubusercontent.com/ashwin4ever/OkState-BigData-Group_Project/master/Preprocessing/FindOccurancesPerDay.py" target="_blank"><font color="#11A800">Goto Group occurrences of resource list(given) accessed per date logic file </font></a></li>  
+						 <li>Logic To find Patterns matching against given list grouped by date</li>
+						 <li > <a href ="https://raw.githubusercontent.com/ashwin4ever/OkState-BigData-Group_Project/master/Preprocessing/LogicOnTimeStamp.py" target="_blank"><font color="#11A800">Goto Patterns matching against given list by date logic file </font></a></li> 
+						 <strong>Mapper::</strong>
+						<li>Mapper logic</li>
+						 <li > <a href ="https://raw.githubusercontent.com/ashwin4ever/OkState-BigData-Group_Project/master/Right_Train_Mapper/nasa_right_mapper.py" target="_blank"><font color="#11A800">Goto Mapper logic file </font></a></li>  
+					   </ul>
+
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-subhead" >
+				<div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#phase2collapseExpOut" style="text-decoration:overline">Expected Output:</a>
+					</h3>
+				</div>
+				<div id="phase2collapseExpOut" class="panel-collapse collapse">
+					<div class="panel-body">
+						<ul class="content">
+						<strong> Patterns Trained:</strong>
+						<li>Day 01 trained patterns</li>
+						 <li > <a href ="https://raw.githubusercontent.com/ashwin4ever/OkState-BigData-Group_Project/master/Data/01.txt" target="_blank"><font color="#11A800">Goto Day 01 Trained Patterns file </font></a></li> 
+						<li>Day 02 trained patterns</li>
+						 <li > <a href ="https://raw.githubusercontent.com/ashwin4ever/OkState-BigData-Group_Project/master/Data/02.txt" target="_blank"><font color="#11A800">Goto Day 02 Trained Patterns file </font></a></li>
+						 
+						 <li>Day 03 trained patterns</li>
+						 <li > <a href ="https://raw.githubusercontent.com/ashwin4ever/OkState-BigData-Group_Project/master/Data/03.txt" target="_blank"><font color="#11A800">Goto Day 03 Trained Patterns file </font></a></li>
+						 
+						<strong>Snapshot of the weight matrix(Mapper Output):</strong>
+						<br>
+						<img class="center" src="https://raw.githubusercontent.com/ashwin4ever/OkState-BigData-Group_Project/master/ouput_mapper.png" alt="#">
+					   </ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<div id ="Future">
+			<div class="content-subhead" >
+				<h1> <a style="text-decoration:none"> Future Works :</a></h1>
+				   <div class="content">
+					<li>In the Works ,Implementing Stockey's Learning Rule.</li> 
+					<li>Preparing test sets to query the patterns </li>		
+				   </div>
+	<!--
+			   <div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#Futurecollapseone" style="text-decoration:overline">Libraries considered:</a>
+					</h3>
+				</div>
+				<div id="Futurecollapseone" class="panel-collapse collapse">
+					<div class="panel-body">
+					   <ul class= "content">
+						 <strong>Libraries:</strong> 
+						 <li>Neupy</li>
+
+						 <li > <a href ="http://neupy.com/pages/installation.html" target="_blank"><font color="#11A800">Goto Neupy Installation page </font></a></li>  
+						 <li>Numpy</li>
+
+						 <li > <a href ="https://scipy.org/install.html" target="_blank"><font color="#11A800">Goto Numpy Installation page</font></a></li>  
+						 <li>Pandas</li>
+
+						 <li > <a href ="https://pandas.pydata.org/pandas-docs/stable/install.html" target="_blank"><font color="#11A800">Goto Pandas Installation page</font></a></li>  
+						 <li>SciKit Learn</li>
+
+						 <li > <a href ="http://scikit-learn.org/stable/install.html" target="_blank"><font color="#11A800">Goto SciKit Learn Installation page</font></a></li>  
+						 <li>Matplotlib</li>
+						 <li > <a href ="https://matplotlib.org/faq/installing_faq.html" target="_blank"><font color="#11A800">Goto Matplotlib Webpage</font></a></li>  
+					   </ul>
+
+					</div>
+				</div>
+			</div>
+			 <div class="content-subhead" >
+				<div >
+					<h3 >
+						<a data-toggle="collapse" data-parent="#accordion" href="#FuturecollapseTwo" style="text-decoration:none">PlaceHolder 2:</a>
+					</h3>
+				</div>
+				<div id="FuturecollapseTwo" class="panel-collapse collapse">
+					<div class="panel-body">
+						<ul class="content">
+						 <li > ********************************** Place Holder *******************************</li>
+
+					   </ul>
+					</div>
+				</div>
+			</div>
+	-->
+		</div>
+	 </div>
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>
