@@ -1,0 +1,393 @@
+Patterns trained in Day 03
+/history/apollo
+/images
+/ntbin
+/~downs
+/statistics/1995
+/history
+/icon
+/elv/TITAN
+/procurement
+/facts
+/history/gemini
+/msfc
+/shuttle/missions
+/facitlities
+/11/history
+/news
+/elv/DELTA
+/persons/nasa-cm
+/elv/SCOUT
+/facilities
+/history/skylab
+/cgi-bin/imagemap
+/statistics
+/shuttle/technology
+/persons/astronauts
+/htbin/imagemap
+/elv/ATLAS_CENTAUR
+/msfc/onboard
+/history/astp
+/payloads/schedules
+/elv/PEGASUS
+/icons
+/shuttle/resources
+/statistics/images
+/elv
+/shuttle
+/htbin
+/statistics/1994
+/history/mercury
+/histroy/apollo-13
+/procurement/midrange
+/shuttle/countdown
+/msfc/crew
+/software/winvn
+/mdss
+/facts/internet
+/pub/winvn
+
+test Pattern is : /resources
+Similarity between Memory pattern: /history/apollo and result pattern:   nan
+Similarity between Memory pattern: /images and result pattern:   nan
+Similarity between Memory pattern: /ntbin and result pattern:   nan
+Similarity between Memory pattern: /~downs and result pattern:   nan
+Similarity between Memory pattern: /statistics/1995 and result pattern:   nan
+Similarity between Memory pattern: /history and result pattern:   nan
+Similarity between Memory pattern: /icon and result pattern:   nan
+Similarity between Memory pattern: /elv/TITAN and result pattern:   nan
+Similarity between Memory pattern: /procurement and result pattern:   nan
+Similarity between Memory pattern: /facts and result pattern:   0.00
+Similarity between Memory pattern: /history/gemini and result pattern:   nan
+Similarity between Memory pattern: /msfc and result pattern:   nan
+Similarity between Memory pattern: /shuttle/missions and result pattern:   nan
+Similarity between Memory pattern: /facitlities and result pattern:   nan
+Similarity between Memory pattern: /11/history and result pattern:   nan
+Similarity between Memory pattern: /news and result pattern:   nan
+Similarity between Memory pattern: /elv/DELTA and result pattern:   nan
+Similarity between Memory pattern: /persons/nasa-cm and result pattern:   nan
+Similarity between Memory pattern: /elv/SCOUT and result pattern:   nan
+Similarity between Memory pattern: /facilities and result pattern:   nan
+Similarity between Memory pattern: /history/skylab and result pattern:   nan
+Similarity between Memory pattern: /cgi-bin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /statistics and result pattern:   nan
+Similarity between Memory pattern: /shuttle/technology and result pattern:   nan
+Similarity between Memory pattern: /persons/astronauts and result pattern:   nan
+Similarity between Memory pattern: /htbin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /elv/ATLAS_CENTAUR and result pattern:   nan
+Similarity between Memory pattern: /msfc/onboard and result pattern:   nan
+Similarity between Memory pattern: /history/astp and result pattern:   nan
+Similarity between Memory pattern: /payloads/schedules and result pattern:   nan
+Similarity between Memory pattern: /elv/PEGASUS and result pattern:   nan
+Similarity between Memory pattern: /icons and result pattern:   nan
+Similarity between Memory pattern: /shuttle/resources and result pattern:   nan
+Similarity between Memory pattern: /statistics/images and result pattern:   0.00
+Similarity between Memory pattern: /elv and result pattern:   nan
+Similarity between Memory pattern: /shuttle and result pattern:   nan
+Similarity between Memory pattern: /htbin and result pattern:   nan
+Similarity between Memory pattern: /statistics/1994 and result pattern:   nan
+Similarity between Memory pattern: /history/mercury and result pattern:   nan
+Similarity between Memory pattern: /histroy/apollo-13 and result pattern:   nan
+Similarity between Memory pattern: /procurement/midrange and result pattern:   nan
+Similarity between Memory pattern: /shuttle/countdown and result pattern:   nan
+Similarity between Memory pattern: /msfc/crew and result pattern:   0.00
+Similarity between Memory pattern: /software/winvn and result pattern:   0.00
+Similarity between Memory pattern: /mdss and result pattern:   nan
+Similarity between Memory pattern: /facts/internet and result pattern:   nan
+Similarity between Memory pattern: /pub/winvn and result pattern:   nan
+test Pattern is : /missions
+Similarity between Memory pattern: /history/apollo and result pattern:   nan
+Similarity between Memory pattern: /images and result pattern:   nan
+Similarity between Memory pattern: /ntbin and result pattern:   nan
+Similarity between Memory pattern: /~downs and result pattern:   nan
+Similarity between Memory pattern: /statistics/1995 and result pattern:   nan
+Similarity between Memory pattern: /history and result pattern:   0.00
+Similarity between Memory pattern: /icon and result pattern:   0.00
+Similarity between Memory pattern: /elv/TITAN and result pattern:   nan
+Similarity between Memory pattern: /procurement and result pattern:   nan
+Similarity between Memory pattern: /facts and result pattern:   nan
+Similarity between Memory pattern: /history/gemini and result pattern:   nan
+Similarity between Memory pattern: /msfc and result pattern:   nan
+Similarity between Memory pattern: /shuttle/missions and result pattern:   nan
+Similarity between Memory pattern: /facitlities and result pattern:   nan
+Similarity between Memory pattern: /11/history and result pattern:   nan
+Similarity between Memory pattern: /news and result pattern:   0.00
+Similarity between Memory pattern: /elv/DELTA and result pattern:   nan
+Similarity between Memory pattern: /persons/nasa-cm and result pattern:   nan
+Similarity between Memory pattern: /elv/SCOUT and result pattern:   nan
+Similarity between Memory pattern: /facilities and result pattern:   nan
+Similarity between Memory pattern: /history/skylab and result pattern:   nan
+Similarity between Memory pattern: /cgi-bin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /statistics and result pattern:   0.00
+Similarity between Memory pattern: /shuttle/technology and result pattern:   nan
+Similarity between Memory pattern: /persons/astronauts and result pattern:   nan
+Similarity between Memory pattern: /htbin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /elv/ATLAS_CENTAUR and result pattern:   0.00
+Similarity between Memory pattern: /msfc/onboard and result pattern:   nan
+Similarity between Memory pattern: /history/astp and result pattern:   nan
+Similarity between Memory pattern: /payloads/schedules and result pattern:   nan
+Similarity between Memory pattern: /elv/PEGASUS and result pattern:   0.00
+Similarity between Memory pattern: /icons and result pattern:   nan
+Similarity between Memory pattern: /shuttle/resources and result pattern:   nan
+Similarity between Memory pattern: /statistics/images and result pattern:   nan
+Similarity between Memory pattern: /elv and result pattern:   nan
+Similarity between Memory pattern: /shuttle and result pattern:   nan
+Similarity between Memory pattern: /htbin and result pattern:   nan
+Similarity between Memory pattern: /statistics/1994 and result pattern:   nan
+Similarity between Memory pattern: /history/mercury and result pattern:   nan
+Similarity between Memory pattern: /histroy/apollo-13 and result pattern:   0.00
+Similarity between Memory pattern: /procurement/midrange and result pattern:   nan
+Similarity between Memory pattern: /shuttle/countdown and result pattern:   nan
+Similarity between Memory pattern: /msfc/crew and result pattern:   nan
+Similarity between Memory pattern: /software/winvn and result pattern:   nan
+Similarity between Memory pattern: /mdss and result pattern:   nan
+Similarity between Memory pattern: /facts/internet and result pattern:   0.00
+Similarity between Memory pattern: /pub/winvn and result pattern:   nan
+test Pattern is : /images
+Similarity between Memory pattern: /history/apollo and result pattern:   nan
+Similarity between Memory pattern: /images and result pattern:   nan
+Similarity between Memory pattern: /ntbin and result pattern:   nan
+Similarity between Memory pattern: /~downs and result pattern:   nan
+Similarity between Memory pattern: /statistics/1995 and result pattern:   nan
+Similarity between Memory pattern: /history and result pattern:   0.00
+Similarity between Memory pattern: /icon and result pattern:   nan
+Similarity between Memory pattern: /elv/TITAN and result pattern:   nan
+Similarity between Memory pattern: /procurement and result pattern:   nan
+Similarity between Memory pattern: /facts and result pattern:   nan
+Similarity between Memory pattern: /history/gemini and result pattern:   nan
+Similarity between Memory pattern: /msfc and result pattern:   nan
+Similarity between Memory pattern: /shuttle/missions and result pattern:   nan
+Similarity between Memory pattern: /facitlities and result pattern:   nan
+Similarity between Memory pattern: /11/history and result pattern:   nan
+Similarity between Memory pattern: /news and result pattern:   nan
+Similarity between Memory pattern: /elv/DELTA and result pattern:   0.00
+Similarity between Memory pattern: /persons/nasa-cm and result pattern:   nan
+Similarity between Memory pattern: /elv/SCOUT and result pattern:   0.00
+Similarity between Memory pattern: /facilities and result pattern:   nan
+Similarity between Memory pattern: /history/skylab and result pattern:   nan
+Similarity between Memory pattern: /cgi-bin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /statistics and result pattern:   nan
+Similarity between Memory pattern: /shuttle/technology and result pattern:   nan
+Similarity between Memory pattern: /persons/astronauts and result pattern:   nan
+Similarity between Memory pattern: /htbin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /elv/ATLAS_CENTAUR and result pattern:   nan
+Similarity between Memory pattern: /msfc/onboard and result pattern:   nan
+Similarity between Memory pattern: /history/astp and result pattern:   nan
+Similarity between Memory pattern: /payloads/schedules and result pattern:   nan
+Similarity between Memory pattern: /elv/PEGASUS and result pattern:   0.00
+Similarity between Memory pattern: /icons and result pattern:   nan
+Similarity between Memory pattern: /shuttle/resources and result pattern:   nan
+Similarity between Memory pattern: /statistics/images and result pattern:   nan
+Similarity between Memory pattern: /elv and result pattern:   nan
+Similarity between Memory pattern: /shuttle and result pattern:   0.00
+Similarity between Memory pattern: /htbin and result pattern:   nan
+Similarity between Memory pattern: /statistics/1994 and result pattern:   nan
+Similarity between Memory pattern: /history/mercury and result pattern:   nan
+Similarity between Memory pattern: /histroy/apollo-13 and result pattern:   nan
+Similarity between Memory pattern: /procurement/midrange and result pattern:   nan
+Similarity between Memory pattern: /shuttle/countdown and result pattern:   nan
+Similarity between Memory pattern: /msfc/crew and result pattern:   0.00
+Similarity between Memory pattern: /software/winvn and result pattern:   nan
+Similarity between Memory pattern: /mdss and result pattern:   nan
+Similarity between Memory pattern: /facts/internet and result pattern:   nan
+Similarity between Memory pattern: /pub/winvn and result pattern:   nan
+test Pattern is : /technology
+Similarity between Memory pattern: /history/apollo and result pattern:   nan
+Similarity between Memory pattern: /images and result pattern:   nan
+Similarity between Memory pattern: /ntbin and result pattern:   nan
+Similarity between Memory pattern: /~downs and result pattern:   nan
+Similarity between Memory pattern: /statistics/1995 and result pattern:   nan
+Similarity between Memory pattern: /history and result pattern:   0.00
+Similarity between Memory pattern: /icon and result pattern:   nan
+Similarity between Memory pattern: /elv/TITAN and result pattern:   0.00
+Similarity between Memory pattern: /procurement and result pattern:   nan
+Similarity between Memory pattern: /facts and result pattern:   nan
+Similarity between Memory pattern: /history/gemini and result pattern:   nan
+Similarity between Memory pattern: /msfc and result pattern:   nan
+Similarity between Memory pattern: /shuttle/missions and result pattern:   nan
+Similarity between Memory pattern: /facitlities and result pattern:   nan
+Similarity between Memory pattern: /11/history and result pattern:   0.00
+Similarity between Memory pattern: /news and result pattern:   nan
+Similarity between Memory pattern: /elv/DELTA and result pattern:   0.00
+Similarity between Memory pattern: /persons/nasa-cm and result pattern:   nan
+Similarity between Memory pattern: /elv/SCOUT and result pattern:   nan
+Similarity between Memory pattern: /facilities and result pattern:   nan
+Similarity between Memory pattern: /history/skylab and result pattern:   nan
+Similarity between Memory pattern: /cgi-bin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /statistics and result pattern:   nan
+Similarity between Memory pattern: /shuttle/technology and result pattern:   0.71
+Similarity between Memory pattern: /persons/astronauts and result pattern:   nan
+Similarity between Memory pattern: /htbin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /elv/ATLAS_CENTAUR and result pattern:   nan
+Similarity between Memory pattern: /msfc/onboard and result pattern:   nan
+Similarity between Memory pattern: /history/astp and result pattern:   nan
+Similarity between Memory pattern: /payloads/schedules and result pattern:   0.00
+Similarity between Memory pattern: /elv/PEGASUS and result pattern:   0.00
+Similarity between Memory pattern: /icons and result pattern:   nan
+Similarity between Memory pattern: /shuttle/resources and result pattern:   nan
+Similarity between Memory pattern: /statistics/images and result pattern:   0.00
+Similarity between Memory pattern: /elv and result pattern:   nan
+Similarity between Memory pattern: /shuttle and result pattern:   nan
+Similarity between Memory pattern: /htbin and result pattern:   0.00
+Similarity between Memory pattern: /statistics/1994 and result pattern:   nan
+Similarity between Memory pattern: /history/mercury and result pattern:   0.00
+Similarity between Memory pattern: /histroy/apollo-13 and result pattern:   nan
+Similarity between Memory pattern: /procurement/midrange and result pattern:   nan
+Similarity between Memory pattern: /shuttle/countdown and result pattern:   0.00
+Similarity between Memory pattern: /msfc/crew and result pattern:   nan
+Similarity between Memory pattern: /software/winvn and result pattern:   nan
+Similarity between Memory pattern: /mdss and result pattern:   0.00
+Similarity between Memory pattern: /facts/internet and result pattern:   0.00
+Similarity between Memory pattern: /pub/winvn and result pattern:   nan
+
+Most frequently accessed path for folder /technology in day 03 is 
+/shuttle/technology 0.71
+
+test Pattern is : /apollo
+Similarity between Memory pattern: /history/apollo and result pattern:   0.71
+Similarity between Memory pattern: /images and result pattern:   nan
+Similarity between Memory pattern: /ntbin and result pattern:   nan
+Similarity between Memory pattern: /~downs and result pattern:   nan
+Similarity between Memory pattern: /statistics/1995 and result pattern:   0.00
+Similarity between Memory pattern: /history and result pattern:   nan
+Similarity between Memory pattern: /icon and result pattern:   nan
+Similarity between Memory pattern: /elv/TITAN and result pattern:   nan
+Similarity between Memory pattern: /procurement and result pattern:   nan
+Similarity between Memory pattern: /facts and result pattern:   nan
+Similarity between Memory pattern: /history/gemini and result pattern:   0.00
+Similarity between Memory pattern: /msfc and result pattern:   0.00
+Similarity between Memory pattern: /shuttle/missions and result pattern:   nan
+Similarity between Memory pattern: /facitlities and result pattern:   nan
+Similarity between Memory pattern: /11/history and result pattern:   nan
+Similarity between Memory pattern: /news and result pattern:   nan
+Similarity between Memory pattern: /elv/DELTA and result pattern:   nan
+Similarity between Memory pattern: /persons/nasa-cm and result pattern:   nan
+Similarity between Memory pattern: /elv/SCOUT and result pattern:   nan
+Similarity between Memory pattern: /facilities and result pattern:   nan
+Similarity between Memory pattern: /history/skylab and result pattern:   nan
+Similarity between Memory pattern: /cgi-bin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /statistics and result pattern:   nan
+Similarity between Memory pattern: /shuttle/technology and result pattern:   nan
+Similarity between Memory pattern: /persons/astronauts and result pattern:   0.00
+Similarity between Memory pattern: /htbin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /elv/ATLAS_CENTAUR and result pattern:   nan
+Similarity between Memory pattern: /msfc/onboard and result pattern:   nan
+Similarity between Memory pattern: /history/astp and result pattern:   nan
+Similarity between Memory pattern: /payloads/schedules and result pattern:   nan
+Similarity between Memory pattern: /elv/PEGASUS and result pattern:   nan
+Similarity between Memory pattern: /icons and result pattern:   nan
+Similarity between Memory pattern: /shuttle/resources and result pattern:   nan
+Similarity between Memory pattern: /statistics/images and result pattern:   nan
+Similarity between Memory pattern: /elv and result pattern:   nan
+Similarity between Memory pattern: /shuttle and result pattern:   nan
+Similarity between Memory pattern: /htbin and result pattern:   nan
+Similarity between Memory pattern: /statistics/1994 and result pattern:   nan
+Similarity between Memory pattern: /history/mercury and result pattern:   nan
+Similarity between Memory pattern: /histroy/apollo-13 and result pattern:   nan
+Similarity between Memory pattern: /procurement/midrange and result pattern:   0.00
+Similarity between Memory pattern: /shuttle/countdown and result pattern:   nan
+Similarity between Memory pattern: /msfc/crew and result pattern:   nan
+Similarity between Memory pattern: /software/winvn and result pattern:   nan
+Similarity between Memory pattern: /mdss and result pattern:   nan
+Similarity between Memory pattern: /facts/internet and result pattern:   0.00
+Similarity between Memory pattern: /pub/winvn and result pattern:   nan
+
+Most frequently accessed path for folder /apollo in day 03 is 
+/history/apollo 0.71
+
+test Pattern is : /soils
+Similarity between Memory pattern: /history/apollo and result pattern:   nan
+Similarity between Memory pattern: /images and result pattern:   nan
+Similarity between Memory pattern: /ntbin and result pattern:   nan
+Similarity between Memory pattern: /~downs and result pattern:   nan
+Similarity between Memory pattern: /statistics/1995 and result pattern:   nan
+Similarity between Memory pattern: /history and result pattern:   nan
+Similarity between Memory pattern: /icon and result pattern:   nan
+Similarity between Memory pattern: /elv/TITAN and result pattern:   nan
+Similarity between Memory pattern: /procurement and result pattern:   nan
+Similarity between Memory pattern: /facts and result pattern:   nan
+Similarity between Memory pattern: /history/gemini and result pattern:   nan
+Similarity between Memory pattern: /msfc and result pattern:   nan
+Similarity between Memory pattern: /shuttle/missions and result pattern:   0.00
+Similarity between Memory pattern: /facitlities and result pattern:   nan
+Similarity between Memory pattern: /11/history and result pattern:   nan
+Similarity between Memory pattern: /news and result pattern:   nan
+Similarity between Memory pattern: /elv/DELTA and result pattern:   nan
+Similarity between Memory pattern: /persons/nasa-cm and result pattern:   0.00
+Similarity between Memory pattern: /elv/SCOUT and result pattern:   0.00
+Similarity between Memory pattern: /facilities and result pattern:   nan
+Similarity between Memory pattern: /history/skylab and result pattern:   0.00
+Similarity between Memory pattern: /cgi-bin/imagemap and result pattern:   0.00
+Similarity between Memory pattern: /statistics and result pattern:   nan
+Similarity between Memory pattern: /shuttle/technology and result pattern:   nan
+Similarity between Memory pattern: /persons/astronauts and result pattern:   nan
+Similarity between Memory pattern: /htbin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /elv/ATLAS_CENTAUR and result pattern:   nan
+Similarity between Memory pattern: /msfc/onboard and result pattern:   0.00
+Similarity between Memory pattern: /history/astp and result pattern:   0.00
+Similarity between Memory pattern: /payloads/schedules and result pattern:   nan
+Similarity between Memory pattern: /elv/PEGASUS and result pattern:   nan
+Similarity between Memory pattern: /icons and result pattern:   0.00
+Similarity between Memory pattern: /shuttle/resources and result pattern:   nan
+Similarity between Memory pattern: /statistics/images and result pattern:   nan
+Similarity between Memory pattern: /elv and result pattern:   0.00
+Similarity between Memory pattern: /shuttle and result pattern:   nan
+Similarity between Memory pattern: /htbin and result pattern:   nan
+Similarity between Memory pattern: /statistics/1994 and result pattern:   nan
+Similarity between Memory pattern: /history/mercury and result pattern:   0.00
+Similarity between Memory pattern: /histroy/apollo-13 and result pattern:   nan
+Similarity between Memory pattern: /procurement/midrange and result pattern:   nan
+Similarity between Memory pattern: /shuttle/countdown and result pattern:   nan
+Similarity between Memory pattern: /msfc/crew and result pattern:   nan
+Similarity between Memory pattern: /software/winvn and result pattern:   nan
+Similarity between Memory pattern: /mdss and result pattern:   nan
+Similarity between Memory pattern: /facts/internet and result pattern:   nan
+Similarity between Memory pattern: /pub/winvn and result pattern:   nan
+test Pattern is : /imagemap
+Similarity between Memory pattern: /history/apollo and result pattern:   nan
+Similarity between Memory pattern: /images and result pattern:   nan
+Similarity between Memory pattern: /ntbin and result pattern:   nan
+Similarity between Memory pattern: /~downs and result pattern:   nan
+Similarity between Memory pattern: /statistics/1995 and result pattern:   0.00
+Similarity between Memory pattern: /history and result pattern:   nan
+Similarity between Memory pattern: /icon and result pattern:   nan
+Similarity between Memory pattern: /elv/TITAN and result pattern:   nan
+Similarity between Memory pattern: /procurement and result pattern:   nan
+Similarity between Memory pattern: /facts and result pattern:   0.00
+Similarity between Memory pattern: /history/gemini and result pattern:   0.00
+Similarity between Memory pattern: /msfc and result pattern:   nan
+Similarity between Memory pattern: /shuttle/missions and result pattern:   nan
+Similarity between Memory pattern: /facitlities and result pattern:   nan
+Similarity between Memory pattern: /11/history and result pattern:   nan
+Similarity between Memory pattern: /news and result pattern:   nan
+Similarity between Memory pattern: /elv/DELTA and result pattern:   nan
+Similarity between Memory pattern: /persons/nasa-cm and result pattern:   nan
+Similarity between Memory pattern: /elv/SCOUT and result pattern:   nan
+Similarity between Memory pattern: /facilities and result pattern:   nan
+Similarity between Memory pattern: /history/skylab and result pattern:   nan
+Similarity between Memory pattern: /cgi-bin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /statistics and result pattern:   0.00
+Similarity between Memory pattern: /shuttle/technology and result pattern:   nan
+Similarity between Memory pattern: /persons/astronauts and result pattern:   0.00
+Similarity between Memory pattern: /htbin/imagemap and result pattern:   nan
+Similarity between Memory pattern: /elv/ATLAS_CENTAUR and result pattern:   nan
+Similarity between Memory pattern: /msfc/onboard and result pattern:   nan
+Similarity between Memory pattern: /history/astp and result pattern:   nan
+Similarity between Memory pattern: /payloads/schedules and result pattern:   nan
+Similarity between Memory pattern: /elv/PEGASUS and result pattern:   nan
+Similarity between Memory pattern: /icons and result pattern:   0.00
+Similarity between Memory pattern: /shuttle/resources and result pattern:   nan
+Similarity between Memory pattern: /statistics/images and result pattern:   nan
+Similarity between Memory pattern: /elv and result pattern:   nan
+Similarity between Memory pattern: /shuttle and result pattern:   nan
+Similarity between Memory pattern: /htbin and result pattern:   nan
+Similarity between Memory pattern: /statistics/1994 and result pattern:   nan
+Similarity between Memory pattern: /history/mercury and result pattern:   0.00
+Similarity between Memory pattern: /histroy/apollo-13 and result pattern:   nan
+Similarity between Memory pattern: /procurement/midrange and result pattern:   nan
+Similarity between Memory pattern: /shuttle/countdown and result pattern:   nan
+Similarity between Memory pattern: /msfc/crew and result pattern:   nan
+Similarity between Memory pattern: /software/winvn and result pattern:   nan
+Similarity between Memory pattern: /mdss and result pattern:   nan
+Similarity between Memory pattern: /facts/internet and result pattern:   nan
+Similarity between Memory pattern: /pub/winvn and result pattern:   nan

@@ -1,0 +1,132 @@
+Patterns trained in Day 01
+
+Test Pattern is : /resources
+
+Most frequently accessed path for folder /resources in day 01 is 
+/shuttle/resources 1.0
+
+Test Pattern is : /missions
+
+Most frequently accessed path for folder /missions in day 01 is 
+/shuttle/missions 0.71
+
+Test Pattern is : /images
+
+No frequently accessed path for folder /images in day 01
+
+Test Pattern is : /technology
+
+Most frequently accessed path for folder /technology in day 01 is 
+/shuttle/technology 0.71
+
+Test Pattern is : /apollo
+
+Most frequently accessed path for folder /apollo in day 01 is 
+/history/apollo 0.71
+
+Test Pattern is : /soils
+
+No frequently accessed path for folder /soils in day 01
+
+Test Pattern is : /imagemap
+
+Most frequently accessed path for folder /imagemap in day 01 is 
+/cgi-bin/imagemap 0.71
+/htbin/imagemap 0.5
+
+Patterns trained in Day 02
+
+Test Pattern is : /resources
+
+Most frequently accessed path for folder /resources in day 02 is 
+/shuttle/resources 0.71
+
+Test Pattern is : /missions
+
+Most frequently accessed path for folder /missions in day 02 is 
+/shuttle/missions 0.71
+
+Test Pattern is : /images
+
+No frequently accessed path for folder /images in day 02
+
+Test Pattern is : /technology
+
+Most frequently accessed path for folder /technology in day 02 is 
+/shuttle/technology 1.0
+
+Test Pattern is : /apollo
+
+Most frequently accessed path for folder /apollo in day 02 is 
+/history/apollo 0.5
+
+Test Pattern is : /soils
+
+No frequently accessed path for folder /soils in day 02
+
+Test Pattern is : /imagemap
+
+No frequently accessed path for folder /imagemap in day 02
+
+Patterns trained in Day 03
+
+Test Pattern is : /resources
+
+No frequently accessed path for folder /resources in day 03
+
+Test Pattern is : /missions
+
+No frequently accessed path for folder /missions in day 03
+
+Test Pattern is : /images
+
+No frequently accessed path for folder /images in day 03
+
+Test Pattern is : /technology
+
+Most frequently accessed path for folder /technology in day 03 is 
+/shuttle/technology 0.71
+
+Test Pattern is : /apollo
+
+Most frequently accessed path for folder /apollo in day 03 is 
+/history/apollo 0.71
+
+Test Pattern is : /soils
+
+No frequently accessed path for folder /soils in day 03
+
+Test Pattern is : /imagemap
+
+No frequently accessed path for folder /imagemap in day 03
+
+Patterns trained in Day 04
+
+Test Pattern is : /resources
+
+No frequently accessed path for folder /resources in day 04
+
+Test Pattern is : /missions
+
+No frequently accessed path for folder /missions in day 04
+
+Test Pattern is : /images
+
+No frequently accessed path for folder /images in day 04
+
+Test Pattern is : /technology
+
+No frequently accessed path for folder /technology in day 04
+
+Test Pattern is : /apollo
+
+Most frequently accessed path for folder /apollo in day 04 is 
+/history/apollo 1.0
+
+Test Pattern is : /soils
+
+No frequently accessed path for folder /soils in day 04
+
+Test Pattern is : /imagemap
+
+No frequently accessed path for folder /imagemap in day 04
